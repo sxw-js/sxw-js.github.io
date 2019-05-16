@@ -10,7 +10,7 @@
   <script src="./lib/sxw.js"></script>
 </head>
 
-<body class="stackedit">
+<body>
   <div class="stackedit__html">
     <h1 id="sxw.js">SXW.js</h1>
     <p>SXW.js is a javascript library that is used to display console warnings aginst Self XSS attacks.</p>
@@ -28,7 +28,7 @@
       <li>The script will register built-in functions into <code>window.sxwjs</code> object.</li>
       <li>At the end of the html document call the printWarning function in <code>window.sxwjs</code> as shown in the
         sample code.
-        <pre class=" language-javascript"><code class="prism  language-javascript"><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+        <pre><code class="prism"><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
     window<span class="token punctuation">.</span>sxwjs<span class="token punctuation">.</span><span class="token function">printWarning</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
 </code></pre>
