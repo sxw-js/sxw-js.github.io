@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SXWjs | Warn your users</title>
   <link rel="stylesheet" href="./style/site.css" />
+  <link rel="stylesheet" href="./style/code.css" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <script src="./lib/sxw.js"></script>
 </head>
@@ -28,10 +29,10 @@
       <li>The script will register built-in functions into <code>window.sxwjs</code> object.</li>
       <li>At the end of the html document call the printWarning function in <code>window.sxwjs</code> as shown in the
         sample code.
-        <pre><code class="prism"><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
-    window<span class="token punctuation">.</span>sxwjs<span class="token punctuation">.</span><span class="token function">printWarning</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
-</code></pre>
+        <pre>
+<code class="lang-js"><span class="tags">&lt;</span>script<span class="tags">&gt;</span>
+  <span class="keyword">window</span>.sxwjs.<span class="function-name">printWarning()</span>;
+<span class="tags">&lt;/</span>script<span class="tags">&gt;</span></code></pre>
       </li>
     </ol>
     <h3 id="demo">Demo</h3>
@@ -81,7 +82,8 @@
     <h3 id="credits">Credits</h3>
     <ol>
       <li>This website is hosted using <a href="https://pages.github.com/" target="blank">GitHub pages</a>.</li>
-      <li>The logo and other images are created using <a href="https://spark.adobe.com/" target="blank">Adobe Spark</a>.</li>
+      <li>The logo and other images are created using <a href="https://spark.adobe.com/" target="blank">Adobe Spark</a>.
+      </li>
       <li>This site was created using <a href="https://stackedit.io" target="blank">stackedit.io</a></li>
     </ol>
   </div>
@@ -89,4 +91,5 @@
 <script>
   window.sxwjs.printWarning();
 </script>
+
 </html>

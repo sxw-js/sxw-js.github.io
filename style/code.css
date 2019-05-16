@@ -1,0 +1,13 @@
+/* Coding style for js based on gitHub markdown */
+
+.lang-js > .tags {
+    color: #d73a49;
+}
+
+.lang-js > .keyword{
+    color: #3279de;
+}
+
+.lang-js > .function-name {
+    color: #8742ca;
+}
