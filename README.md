@@ -1,2 +1,2 @@
 # sxw-js.github.io
-Website source code for sxw.js
+Website source code for https://sxw.js.org/
