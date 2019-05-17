@@ -1,109 +1,104 @@
+/* CSS obtained when exporting site from stack edit. It has been optimized later on. */
 
-html{
-    line-height:1.15;
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%
+html {
+  color: #050505;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  line-height: 1.67;
+
+  text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  /* Makes the fonts to look smoothly in Mac OS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-body{
-    margin:0
+body {
+  margin: 0;
 }
-h1{
-    font-size:2em;
-    margin:.67em 0
+
+h1 {
+  font-size: 2em;
 }
-pre{
-    font-family:monospace;
-    font-size:1em
+h1,
+h3,
+h5 {
+  margin: 1.8em 0;
+  line-height: 1.33;
 }
-a{
-    background-color:transparent;
-    -webkit-text-decoration-skip:objects
+h1:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.33em;
+  border-bottom: 1px solid #d5d5d5;
 }
-code{
-    font-family:monospace;
-    font-size:1em
+
+pre {
+  font-family: monospace;
+  font-size: 1em;
+  margin: 1.2em 0;
 }
-img{
-    border-style:none
+code {
+  font-family: monospace;
+  font-size: 1em;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  padding: 2px 4px;
 }
-::-webkit-file-upload-button{
-    -webkit-appearance:button;
-    font:inherit
+pre > code {
+  display: block;
+  padding: 0.5em;
+  overflow-x: auto;
+  white-space: pre;
 }
-body,html{
-    color:#050505;
-    font-size:16px;
-    font-family: Lato, sans-serif;
-    font-variant-ligatures:common-ligatures;
-    line-height:1.67;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale
+
+img {
+  border-style: none;
+  max-width: 100%;
 }
-ol,p,pre{
-    margin:1.2em 0
+
+ol,
+p {
+  margin: 1.2em 0;
 }
-h1,h3,h5{
-    margin:1.8em 0;
-    line-height:1.33
+
+a {
+  background-color: transparent;
+  color: #0c93e4;
+  text-decoration: underline;
+  text-decoration-skip: ink;
 }
-h1:after{
-    content:"";
-    display:block;
-    position:relative;
-    top:.33em;
-    border-bottom:1px solid #d5d5d5;
+a:focus,
+a:hover {
+  text-decoration: none;
 }
-a{
-    color:#0c93e4;
-    text-decoration:underline;
-    text-decoration-skip:ink
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-a:focus,a:hover{
-    text-decoration:none
+td,
+th {
+  border-right: 1px solid #dcdcdc;
+  padding: 8px 12px;
 }
-code,pre{
-    font-family:Roboto Mono,Lucida Sans Typewriter,Lucida Console,monaco,Courrier,monospace;
-    font-size:.85em
+td:last-child,
+th:last-child {
+  border-right: 0;
 }
-code *,pre *{
-    font-size:inherit
+td {
+  border-top: 1px solid #dcdcdc;
 }
-code{
-    background-color:#f6f8fa;
-    border-radius:3px;
-    padding:2px 4px
-}
-pre>code{
-    background-color:#f6f8fa;
-    display:block;
-    padding:.5em;
-    -webkit-text-size-adjust:none;
-    overflow-x:auto;
-    white-space:pre
-}
-table{
-    background-color:transparent;
-    border-collapse:collapse;
-    border-spacing:0
-}
-td,th{
-    border-right:1px solid #dcdcdc;
-    padding:8px 12px
-}
-td:last-child,th:last-child{
-    border-right:0
-}
-td{
-    border-top:1px solid #dcdcdc
-}
-img{
-    max-width:100%
-}
-.stackedit__html{
-    margin-bottom:180px;
-    margin-left:auto;
-    margin-right:auto;
-    padding-left:30px;
-    padding-right:30px;
-    max-width:750px
+
+.stackedit__html {
+  margin-bottom: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 750px;
 }
