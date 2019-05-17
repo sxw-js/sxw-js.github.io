@@ -2,7 +2,7 @@
 
 html {
   color: #050505;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.67;
@@ -33,7 +33,7 @@ h1:after {
   display: block;
   position: relative;
   top: 0.33em;
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #c0c0c0;
 }
 
 pre {
@@ -44,7 +44,8 @@ pre {
 code {
   font-family: monospace;
   font-size: 1em;
-  background-color: #f6f8fa;
+  color: #000000;
+  background-color: #e6e6e6;
   border-radius: 3px;
   padding: 2px 4px;
 }
@@ -69,11 +70,9 @@ a {
   background-color: transparent;
   color: #0c93e4;
   text-decoration: underline;
-  text-decoration-skip: ink;
 }
-a:focus,
-a:hover {
-  text-decoration: none;
+a:visited {
+  color: #01558a;
 }
 
 table {
@@ -85,7 +84,7 @@ table {
 }
 td,
 th {
-  border-right: 1px solid #dcdcdc;
+  border-right: 1px solid #c0c0c0;
   padding: 8px 12px;
 }
 td:last-child,
@@ -93,7 +92,7 @@ th:last-child {
   border-right: 0;
 }
 td {
-  border-top: 1px solid #dcdcdc;
+  border-top: 1px solid #c0c0c0;
 }
 
 .stackedit__html {
