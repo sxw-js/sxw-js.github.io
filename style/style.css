@@ -2,9 +2,18 @@
 * Linter used: https://stylelint.io
 */
 
+:root {
+  --bg-code: #ededed;
+  --bg-main: #f8f8f8;
+  --text-main: #050505;
+  --line-color: #c0c0c0;
+  --link-unvisited: #eb5905;
+  --link-visited: #b14507;
+}
+
 html {
-  color: #050505;
-  background-color: #f8f8f8;
+  color: var(--text-main);
+  background-color: var(--bg-main);
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.67;
@@ -45,7 +54,7 @@ h1::after {
   display: block;
   position: relative;
   top: 0.33em;
-  border-bottom: 1px solid #c0c0c0;
+  border-bottom: 1px solid var(--line-color);
 }
 
 /* #endregion Heading tags */
@@ -61,8 +70,8 @@ pre {
 code {
   font-family: monospace;
   font-size: 1em;
-  color: #000;
-  background-color: #e6e6e6;
+  color: black;
+  background-color: var(--bg-code);
   border-radius: 3px;
   padding: 2px 4px;
 }
@@ -80,12 +89,12 @@ pre > code {
 
 a {
   background-color: transparent;
-  color: #0c93e4;
+  color: var(--link-unvisited);
   text-decoration: underline;
 }
 
 a:visited {
-  color: #01558a;
+  color: var(--link-visited);
 }
 
 /* #endregion Links */
@@ -103,12 +112,12 @@ table {
 
 td,
 th {
-  border-right: 1px solid #c0c0c0;
+  border-right: 1px solid var(--line-color);
   padding: 8px 12px;
 }
 
 td {
-  border-top: 1px solid #c0c0c0;
+  border-top: 1px solid var(--line-color);
 }
 
 td:last-child,
