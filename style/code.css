@@ -1,13 +1,19 @@
-/* Coding style for js based on gitHub markdown */
+/*
+* Coding style for js based on gitHub markdown
+*/
+
+/* #region Javascript */
 
 .lang-js > .tags {
-    color: #d73a49;
+  color: #d73a49;
 }
 
-.lang-js > .keyword{
-    color: #3279de;
+.lang-js > .keyword {
+  color: #3279de;
 }
 
 .lang-js > .function-name {
-    color: #8742ca;
+  color: #8742ca;
 }
+
+/* #endregion Javascript */
