@@ -1,4 +1,6 @@
-/* CSS obtained when exporting site from stack edit. It has been optimized later on. */
+/* 
+* Linter used: https://stylelint.io
+*/
 
 html {
   color: #050505;
@@ -7,6 +9,7 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.67;
 
+  /* To adjust how text is rendered when zoom in or out 100% and auto or same */
   text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -15,20 +18,29 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 body {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 750px;
 }
+
+/* #region Heading tags */
 
 h1 {
   font-size: 2em;
   margin: 1.7em 0 1.2em 0;
 }
+
 h3,
 h4 {
   margin: 1.2em 0 1.2em 0;
   line-height: 1.33;
 }
-h1:after {
+
+h1::after {
   content: "";
   display: block;
   position: relative;
@@ -36,25 +48,74 @@ h1:after {
   border-bottom: 1px solid #c0c0c0;
 }
 
+/* #endregion Heading tags */
+
+/* #region Code blocks */
+
 pre {
   font-family: monospace;
   font-size: 1em;
   margin: 1.2em 0;
 }
+
 code {
   font-family: monospace;
   font-size: 1em;
-  color: #000000;
+  color: #000;
   background-color: #e6e6e6;
   border-radius: 3px;
   padding: 2px 4px;
 }
+
 pre > code {
   display: block;
   padding: 0.5em;
   overflow-x: auto;
   white-space: pre;
 }
+
+/* #endregion Code blocks */
+
+/* #region Links */
+
+a {
+  background-color: transparent;
+  color: #0c93e4;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #01558a;
+}
+
+/* #endregion Links */
+
+/* #region Tables */
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  overflow-x: auto;
+}
+
+td,
+th {
+  border-right: 1px solid #c0c0c0;
+  padding: 8px 12px;
+}
+
+td {
+  border-top: 1px solid #c0c0c0;
+}
+
+td:last-child,
+th:last-child {
+  border-right: 0;
+}
+
+/* #endregion Tables */
 
 img {
   border-style: none;
@@ -64,41 +125,4 @@ img {
 ol,
 p {
   margin: 1.2em 0;
-}
-
-a {
-  background-color: transparent;
-  color: #0c93e4;
-  text-decoration: underline;
-}
-a:visited {
-  color: #01558a;
-}
-
-table {
-  background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0;
-  display: block;
-  overflow-x: auto;
-}
-td,
-th {
-  border-right: 1px solid #c0c0c0;
-  padding: 8px 12px;
-}
-td:last-child,
-th:last-child {
-  border-right: 0;
-}
-td {
-  border-top: 1px solid #c0c0c0;
-}
-
-.stackedit__html {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  max-width: 750px;
 }

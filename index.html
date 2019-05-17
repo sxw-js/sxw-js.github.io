@@ -12,10 +12,9 @@
   </head>
 
   <body>
-    <div class="stackedit__html">
-      <h1 id="sxw.js">SXW.js</h1>
-      <p>SXW.js is a javascript library that is used to display console warnings aginst Self XSS attacks.</p>
-      <!-- <p><a href="https://github.com/sxw-js/sxw-js/releases/" target="blank"><img
+    <h1 id="sxw.js">SXW.js</h1>
+    <p>SXW.js is a javascript library that is used to display console warnings aginst Self XSS attacks.</p>
+    <!-- <p><a href="https://github.com/sxw-js/sxw-js/releases/" target="blank"><img
           src="https://img.shields.io/github/release/sxw-js/sxw-js.svg" alt="GitHub release"></a> <a
         href="https://github.com/sxw-js/sxw-js/blob/master/LICENSE" target="blank"><img
           src="https://img.shields.io/github/license/sxw-js/sxw-js.svg" alt="GitHub"></a> <a
@@ -23,72 +22,71 @@
           src="https://img.shields.io/github/issues/sxw-js/sxw-js.svg" alt="GitHub issues"></a></p>
     <p><a href="https://github.com/sxw-js/sxw-js" target="blank">View on GitHub</a><br>
       <a href="https://github.com/sxw-js/sxw-js/releases/" target="blank">Download Latest version</a></p> -->
-      <h3 id="basic-usage">Basic Usage</h3>
-      <ol>
-        <li>Include the sxw.js file in your website.</li>
-        <li>The script will register built-in functions into <code>window.sxwjs</code> object.</li>
-        <li>At the end of the html document call the printWarning function in <code>window.sxwjs</code> as shown in the
-          sample code.
-          <pre>
+    <h3 id="basic-usage">Basic Usage</h3>
+    <ol>
+      <li>Include the sxw.js file in your website.</li>
+      <li>The script will register built-in functions into <code>window.sxwjs</code> object.</li>
+      <li>At the end of the html document call the printWarning function in <code>window.sxwjs</code> as shown in the
+        sample code.
+        <pre>
 <code class="lang-js"><span class="tags">&lt;</span>script<span class="tags">&gt;</span>
   <span class="keyword">window</span>.sxwjs.<span class="function-name">printWarning()</span>;
 <span class="tags">&lt;/</span>script<span class="tags">&gt;</span></code></pre>
-        </li>
-      </ol>
-      <h3 id="demo">Demo</h3>
-      <img src="./img/sxwjs-demo.jpg">
-      <p>Open the console on this page to view a sample of the XSS warning displayed.</p>
-      <h3 id="customizations">Customizations</h3>
-      <h4 id="sections">Sections</h4>
-      <p>The warning displayed in console contains three sections.</p>
-      <ol>
-        <li>A huge STOP sign</li>
-        <li>A caution text in bold</li>
-        <li>A detailed message saying that this section is intented for developers only. It also warns aginst copy
-          pasting
-          content in the console.</li>
-      </ol>
-      <h4 id="configuration">Configuration</h4>
-      <p>SXW.js has a config object with the following variables,</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Variable name</th>
-            <th>Default value</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>stopColor</td>
-            <td>red</td>
-            <td>The colour of the stop sign</td>
-          </tr>
-          <tr>
-            <td>warningText</td>
-            <td>This section is intended for developers only … …</td>
-            <td>The detailed error message</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>These variable can be customized to suit your website needs.</p>
-      <h4 id="functions">Functions</h4>
-      <p>There are three functions in the library that will be available into the <code>window.sxwjs</code> object.
-      </p>
-      <ol>
-        <li><code>printStop</code> - Prints just the huge stop sign</li>
-        <li><code>printWarningText</code> - Prints the caution sign and the detailed error message</li>
-        <li><code>printWarning</code> - prints all the three sections</li>
-      </ol>
-      <p>None of these functions are called by default. You can choose to call them as you wish.</p>
-      <h3 id="credits">Credits</h3>
-      <ol>
-        <li>This website is hosted using <a href="https://pages.github.com/" target="blank">GitHub pages</a>.</li>
-        <li>The logo and other images are created using <a href="https://spark.adobe.com/" target="blank">Adobe
-            Spark</a>.
-        </li>
-      </ol>
-    </div>
+      </li>
+    </ol>
+    <h3 id="demo">Demo</h3>
+    <img src="./img/sxwjs-demo.jpg">
+    <p>Open the console on this page to view a sample of the XSS warning displayed.</p>
+    <h3 id="customizations">Customizations</h3>
+    <h4 id="sections">Sections</h4>
+    <p>The warning displayed in console contains three sections.</p>
+    <ol>
+      <li>A huge STOP sign</li>
+      <li>A caution text in bold</li>
+      <li>A detailed message saying that this section is intented for developers only. It also warns aginst copy
+        pasting
+        content in the console.</li>
+    </ol>
+    <h4 id="configuration">Configuration</h4>
+    <p>SXW.js has a config object with the following variables,</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Variable name</th>
+          <th>Default value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>stopColor</td>
+          <td>red</td>
+          <td>The colour of the stop sign</td>
+        </tr>
+        <tr>
+          <td>warningText</td>
+          <td>This section is intended for developers only … …</td>
+          <td>The detailed error message</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>These variable can be customized to suit your website needs.</p>
+    <h4 id="functions">Functions</h4>
+    <p>There are three functions in the library that will be available into the <code>window.sxwjs</code> object.
+    </p>
+    <ol>
+      <li><code>printStop</code> - Prints just the huge stop sign</li>
+      <li><code>printWarningText</code> - Prints the caution sign and the detailed error message</li>
+      <li><code>printWarning</code> - prints all the three sections</li>
+    </ol>
+    <p>None of these functions are called by default. You can choose to call them as you wish.</p>
+    <h3 id="credits">Credits</h3>
+    <ol>
+      <li>This website is hosted using <a href="https://pages.github.com/" target="blank">GitHub pages</a>.</li>
+      <li>The logo and other images are created using <a href="https://spark.adobe.com/" target="blank">Adobe
+          Spark</a>.
+      </li>
+    </ol>
   </body>
   <script>
     window.sxwjs.printWarning();
