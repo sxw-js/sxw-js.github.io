@@ -6,19 +6,19 @@
 
 .code > .keyword,
 .code > .symbols {
-  color: #d73a49;
+  color: #ff3145;
 }
 
 .code > .string {
-  color: #7D2727;
+  color: #f18d09;
 }
 
 .code > .predefined-values {
-  color: #3279de;
+  color: #80b5ff;
 }
 
 .code > .function-name {
-  color: #8742ca;
+  color: #b162ff;
 }
 
 /* #endregion Javascript */

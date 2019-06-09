@@ -3,9 +3,10 @@
 */
 
 :root {
-  --bg-code: #ededed;
   --bg-main: #f8f8f8;
+  --bg-code: #1c1c1c;
   --text-main: #050505;
+  --text-code: #ffffff;
   --line-color: #c0c0c0;
   --link-unvisited: #eb5905;
   --link-visited: #b14507;
@@ -70,7 +71,7 @@ pre {
 code {
   font-family: monospace;
   font-size: 1em;
-  color: black;
+  color: var(--text-code);
   background-color: var(--bg-code);
   border-radius: 3px;
   padding: 2px 4px;
