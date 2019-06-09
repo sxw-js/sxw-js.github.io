@@ -4,15 +4,20 @@
 
 /* #region Javascript */
 
-.lang-js > .tags {
+.code > .keyword,
+.code > .symbols {
   color: #d73a49;
 }
 
-.lang-js > .keyword {
+.code > .string {
+  color: #7D2727;
+}
+
+.code > .predefined-values {
   color: #3279de;
 }
 
-.lang-js > .function-name {
+.code > .function-name {
   color: #8742ca;
 }
 
