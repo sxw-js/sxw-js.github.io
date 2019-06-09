@@ -13,15 +13,15 @@
 <body>
   <h1 id="sxw.js">SXW.js</h1>
   <p>SXW.js is a javascript library that is used to display console warnings aginst Self XSS attacks.</p>
-  <a href="https://github.com/sxwjs/sxwjs"><img src="https://img.shields.io/badge/View%20on-Github-lightgrey.svg?logo=github&style=flat-square"></a>
+  <a href="https://github.com/sxwjs/sxwjs" target="blank"><img src="https://img.shields.io/badge/View%20on-Github-lightgrey.svg?logo=github&style=flat-square"></a>
 
   <h3 id="download-links">Download via</h3>
   <div>
-    <a href="https://www.npmjs.com/package/@sxwjs/sxwjs"><img
-        src="https://img.shields.io/npm/v/@sxwjs/sxwjs.svg?style=flat-square&logo=npm" alt="npm link"></a>
-    <a href="https://www.nuget.org/packages/sxw.js/"><img
-        src="https://img.shields.io/nuget/v/sxw.js.svg?style=flat-square&logo=nuget" alt="nuget link"></a>
-    <a href="https://github.com/sxwjs/sxwjs/releases"><img alt="GitHub release"
+    <a href="https://www.npmjs.com/package/@sxwjs/sxwjs" target="blank"><img alt="npm link"
+        src="https://img.shields.io/npm/v/@sxwjs/sxwjs.svg?style=flat-square&logo=npm"></a>
+    <a href="https://www.nuget.org/packages/sxw.js/" target="blank"><img alt="nuget link" 
+        src="https://img.shields.io/nuget/v/sxw.js.svg?style=flat-square&logo=nuget"></a>
+    <a href="https://github.com/sxwjs/sxwjs/releases" target="blank"><img alt="GitHub release"
         src="https://img.shields.io/github/release/sxwjs/sxwjs.svg?label=GitHub%20release&logo=github&style=flat-square"></a>
   </div>
 
@@ -31,7 +31,9 @@
     alt="screenshot of the console warning">
   <p>Open the console on this page to view a sample of the XSS warning displayed.</p>
 
-  <h3 id="basic-usage">Basic Usage</h3>
+  <h3 id="usage">Usage</h3>
+  
+  <h4 id="usage-js-file">Using js file directly</h4>
   <ol>
     <li>Include the sxw.js file in your website.</li>
     <li>The script will register built-in functions into <code>window.sxwjs</code> object.</li>
@@ -42,6 +44,13 @@
   <span class="keyword">window</span>.sxwjs.<span class="function-name">printWarning()</span>;
 <span class="tags">&lt;/</span>script<span class="tags">&gt;</span></code></pre>
     </li>
+  </ol>
+
+  <h4 id="usage-nuget">Using nuget</h4>
+  <ol>
+    <li>Install the <a href="https://www.nuget.org/packages/sxw.js/" target="blank">nuget package</a></li>
+    <li>Include the sxw.js file from the content folder into your website.</li>
+    <li>At the end of the HTML document call the printWarning function in window.sxwjs similar to the one mentioned above.</li>
   </ol>
 
   <h3 id="customizations">Customizations</h3>
