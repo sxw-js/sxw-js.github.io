@@ -128,6 +128,14 @@ th:last-child {
 
 /* #endregion Tables */
 
+/* #region utility classes */
+
+.no-decoration {
+  text-decoration: none;
+}
+
+/* #endregion utility classes */
+
 img {
   border-style: none;
   max-width: 100%;
