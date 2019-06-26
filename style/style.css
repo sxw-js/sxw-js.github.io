@@ -126,6 +126,11 @@ th:last-child {
   border-right: 0;
 }
 
+.no-border td,.no-border  th {
+  border-right:0;
+  border-top: 0;
+}
+
 /* #endregion Tables */
 
 /* #region utility classes */
