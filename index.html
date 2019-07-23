@@ -109,10 +109,33 @@ sxwjs.<span class="function-name">printWarning()</span>;</code></pre>
         <td>The colour of the stop sign</td>
       </tr>
       <tr>
+        <td>stopText</td>
+        <td>`*` based stop sign text</td>
+        <td>The text used to print STOP sign</td>
+      </tr>
+      <tr>
+        <td>stopFontWeight</td>
+        <td>bold</td>
+        <td>Font weight for stop sign</td>
+      </tr>
+      <tr>
+        <td>cautionText</td>
+        <td>Caution: DO NOT PROCEED.</td>
+        <td>Text for caution notice</td>
+      </tr>
+      <tr>
+        <td>cautionFontWeight</td>
+        <td>bold</td>
+        <td>Font weight for caution sign</td>
+      </tr>
+      <tr>
+        <td>cautionFontSize</td>
+        <td>15px</td>
+        <td>Font size for caution sign</td>
+      </tr>
+      <tr>
         <td>warningText</td>
-        <td>This section is intended for developers only. Don't copy paste anything in this area.\nIf someone told you
-          to copy and paste something here, it is a scam and will give them access to your account. In that case, kindly
-          report this to our support team.</td>
+        <td>This section is intended for developers only. Don't copy paste anything ...</td>
         <td>The detailed error message</td>
       </tr>
     </tbody>
@@ -124,7 +147,8 @@ sxwjs.<span class="function-name">printWarning()</span>;</code></pre>
   </p>
   <ol>
     <li><i>printStop</i> - Prints just the huge stop sign</li>
-    <li><i>printWarningText</i> - Prints the caution sign and the detailed error message</li>
+    <li><i>printCautionNotice</i> - Prints the caution sign</li>
+    <li><i>printWarningText</i> - Prints the detailed error message</li>
     <li><i>printWarning</i> - prints all the three sections</li>
   </ol>
   <p>None of these functions are called by default. You can choose to call them as you wish.</p>
