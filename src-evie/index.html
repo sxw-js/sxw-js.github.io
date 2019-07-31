@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>SXW.js | Prevent Self XSS</title>
 	<!-- Don't forget to add your metadata here -->
-	<link rel='stylesheet' href='css/style.min.css' />
+	<link rel='stylesheet' href='./css/style.min.css' />
 </head>
 
 <body>
@@ -15,11 +15,11 @@
 		<nav class="nav__mobile"></nav>
 		<div class="container">
 			<div class="navbar__inner">
-				<a href="index.html" class="navbar__logo">SXW.js</a>
+				<a href="./index.html" class="navbar__logo">SXW.js</a>
 				<nav class="navbar__menu">
 					<ul>
-						<li><a href="#">Documentation</a></li>
-						<li><a href="#">GitHub</a></li>
+						<li><a href="./docs/installtion.html">Documentation</a></li>
+						<li><a href="https://github.com/sxwjs/sxwjs" target="_blank">GitHub</a></li>
 					</ul>
 				</nav>
 				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg"
@@ -39,11 +39,11 @@
 			<div class="container">
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
-						<h1 class="hero__title">Warn your users aginst Self-XSS attacks</h1>
+						<h1 class="hero__title">Warn your users against Self-XSS attacks</h1>
 						<p class="hero__text">SXW.js is an open-source javascript library that is used to display
-							warnings in user console. Warn your users aginst Self XSS attacks and it's dangers.</p>
-						<a href="#" class="button button__accent">Download</a>
-						<a href="#" class="button hero__button">View on GitHub</a>
+							warnings in user console. Warn your users against Self XSS attacks and it's dangers.</p>
+						<a href="./docs/installtion.html" class="button button__accent">Download</a>
+						<a href="https://github.com/sxwjs/sxwjs" target="_blank" class="button hero__button">View on GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -87,7 +87,7 @@
 						<img src="./images/undraw_creation.svg" class="step__image">
 					</div>
 					<h4>Customizable</h4>
-					<p class="step__text">All of data used in SXW.js are stored in config variables making it easier to
+					<p class="step__text">All of the data used in SXW.js are stored in config variables making it easier to
 						customize.</p>
 				</div>
 			</div>
@@ -102,24 +102,26 @@
 				</div>
 				<div class="expanded__content">
 					<h2 class="expanded__title">Prevention is better than cure</h2>
-					<p class="expanded__text">Warn your users about the potential dangers behind running unknown code in the browser console. Stop Self-XSS attcaks before they happen. Prevent malicious persons from accessing user data.</p>
+					<p class="expanded__text">Warn your users about the potential dangers behind running unknown code in
+						the browser console. Stop Self-XSS attacks before they happen. Prevent malicious persons from
+						accessing user data.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="expanded landing__section">
-			<div class="container">
-				<div class="expanded__inner">
-					<div class="expanded__media">
-						<img src="./images/undraw_hacker_mind.svg" class="expanded__image">
-					</div>
-					<div class="expanded__content">
-						<h2 class="expanded__title">Know your attackers</h2>
-						<p class="expanded__text">Use SXW.js to educate users about reporting Self-XSS attacks. Make use of the custom messages config to display your support email or reporting website and obtain info on attackers.</p>
-					</div>
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/undraw_hacker_mind.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Know your attackers</h2>
+					<p class="expanded__text">Use SXW.js to educate users about reporting Self-XSS attacks. Make use of the custom messages config to display your support email or reporting website and obtain info on attackers.</p>
 				</div>
 			</div>
 		</div>
+	</div>
 	<div class="expanded landing__section">
 		<div class="container">
 			<div class="expanded__inner">
@@ -128,8 +130,7 @@
 				</div>
 				<div class="expanded__content">
 					<h2 class="expanded__title">Framework agnostic. Your front-end setup, your choice.</h2>
-					<p class="expanded__text">SXW.js has zero dependencies and uses vanilla JavaScript for a few functions
-						with minimal footprint. You can use React, Angular, Vue, jQuery or whatever you prefer.</p>
+					<p class="expanded__text">SXW.js has zero dependencies and uses vanilla JavaScript for a few functions with a minimal footprint. You can use React, Angular, Vue, jQuery or whatever you prefer.</p>
 				</div>
 			</div>
 		</div>
@@ -139,8 +140,9 @@
 		<div class="container">
 			<div class="cta__inner">
 				<h2 class="cta__title">Get started now</h2>
-				<p class="cta__sub cta__sub--center">Install through a package manager or download the js file directly.</p>
-				<a href="#" class="button button__accent">Download SXW.js</a>
+				<p class="cta__sub cta__sub--center">Install through a package manager or download the js file directly.
+				</p>
+				<a href="./docs/installtion.html" class="button button__accent">Download SXW.js</a>
 			</div>
 		</div>
 	</div>
@@ -148,36 +150,55 @@
 	<div class="footer footer--dark">
 		<div class="container">
 			<div class="footer__inner">
-				<a href="index.html" class="footer__textLogo">Evie theme</a>
 				<div class="footer__data">
 					<div class="footer__data__item">
 						<div class="footer__row">
-							Created by <a href="https://twitter.com/ninalimpi" target="_blank"
-								class="footer__link">Katerina Limpitsouni</a>
+							<a href="./index.html" class="footer__textLogo">SXW.js</a>
+							© 2019 Kolappan Nathan.
 						</div>
 						<div class="footer__row">
-							Code/design by <a href="https://twitter.com/anges244" target="_blank"
-								class="footer__link">Aggelos Gesoulis</a>
-						</div>
-					</div>
-					<div class="footer__data__item">
-						<div class="footer__row">Created for <a href="https://undraw.co" target="_blank"
-								class="footer__link">unDraw</a>
+							<a href="https://github.com/sxwjs/sxwjs" target="_blank" class="footer__link">GitHub</a>
 						</div>
 					</div>
 					<div class="footer__data__item">
 						<div class="footer__row">
-							<a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+							Facing trouble with SXW.js
 						</div>
 						<div class="footer__row">
-							<a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
+							<a href="https://github.com/sxwjs/sxwjs/issues" target="_blank" class="footer__link">Raise an issue</a>
 						</div>
 						<div class="footer__row">
-							<a href="https://www.facebook.com/undraw.co/" target="_blank"
-								class="footer__link">Facebook</a>
+							<a href="https://github.com/sxwjs/sxwjs/pulls" target="_blank" class="footer__link">Submit a Pull request</a>
+						</div>
+					</div>
+					<div class="footer__data__item">
+						<div class="footer__row">
+							Spread the word
 						</div>
 						<div class="footer__row">
-							<a href="./additional.html" class="footer__link">MIT license</a>
+							<a href="" target="_blank" class="footer__link">Linkedin</a>
+						</div>
+						<div class="footer__row">
+							<a href="" target="_blank" class="footer__link">Twitter</a>
+						</div>
+						<div class="footer__row">
+							<a href="" target="_blank" class="footer__link">Facebook</a>
+						</div>
+					</div>
+					<div class="footer__data__item">
+						<div class="footer__row">Docs
+						</div>
+						<div class="footer__row">
+							<a href="./docs/installtion.html" class="footer__link">Installation</a>
+						</div>
+						<div class="footer__row">
+							<a href="./docs/usage.html" class="footer__link">Basic Usage</a>
+						</div>
+						<div class="footer__row">
+							<a href="./docs/customization.html" class="footer__link">Customizations</a>
+						</div>
+						<div class="footer__row">
+							<a href="./docs/demo.html" class="footer__link">Demo</a>
 						</div>
 					</div>
 				</div>
