@@ -2,11 +2,18 @@
 <html lang='en'>
 
 <head>
-	<meta class="utf-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>SXW.js | Prevent Self XSS</title>
-	<!-- Don't forget to add your metadata here -->
+	<meta name="description"
+		content="SXW.js is an open-source js library that is used to display warnings to users aginst Self XSS attacks.">
+
+	<meta property="og:title" content="SXWjs | JS library for Self XSS Warning">
+	<meta property="og:image"
+		content="https://raw.githubusercontent.com/sxwjs/sxwjs-images/master/github%20social%20preview/SXW%20js.jpg">
+
 	<link rel='stylesheet' href='./css/style.min.css' />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -188,13 +195,16 @@
 							Spread the word
 						</div>
 						<div class="footer__row">
-							<a href="https://www.linkedin.com/shareArticle?url=https://sxw.js.org/" target="_blank" class="footer__link">Linkedin</a>
+							<a href="https://www.linkedin.com/shareArticle?url=https://sxw.js.org/" target="_blank"
+								class="footer__link">Linkedin</a>
 						</div>
 						<div class="footer__row">
-							<a href="https://twitter.com/intent/tweet?url=https://sxw.js.org/" target="_blank" class="footer__link">Twitter</a>
+							<a href="https://twitter.com/intent/tweet?url=https://sxw.js.org/" target="_blank"
+								class="footer__link">Twitter</a>
 						</div>
 						<div class="footer__row">
-							<a href="https://www.facebook.com/sharer/sharer.php?u=https://sxw.js.org/" target="_blank" class="footer__link">Facebook</a>
+							<a href="https://www.facebook.com/sharer/sharer.php?u=https://sxw.js.org/" target="_blank"
+								class="footer__link">Facebook</a>
 						</div>
 					</div>
 					<div class="footer__data__item">
@@ -217,6 +227,10 @@
 			</div>
 		</div>
 		<script src='js/app.min.js'></script>
+		<script src="./lib/sxw.js"></script>
+		<script>
+			window.sxwjs.printWarning();
+		</script>
 </body>
 
 </html>

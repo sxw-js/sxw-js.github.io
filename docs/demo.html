@@ -2,10 +2,19 @@
 <html lang='en'>
 
 <head>
-	<meta class="utf-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 	<title>Docs | SXW.js</title>
+	<meta name="description"
+		content="SXW.js is an open-source js library that is used to display warnings to users aginst Self XSS attacks.">
+
+	<meta property="og:title" content="SXWjs | JS library for Self XSS Warning">
+	<meta property="og:image"
+		content="https://raw.githubusercontent.com/sxwjs/sxwjs-images/master/github%20social%20preview/SXW%20js.jpg">
+
 	<link rel='stylesheet' href='../css/style.min.css' />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -78,6 +87,10 @@
 	</div>
 
 	<script src='../js/app.min.js'></script>
+	<script src="../lib/sxw.js"></script>
+	<script>
+		window.sxwjs.printWarning();
+	</script>
 </body>
 
 </html>

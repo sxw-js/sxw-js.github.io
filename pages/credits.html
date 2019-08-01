@@ -2,10 +2,20 @@
 <html lang='en'>
 
 <head>
-	<meta class="utf-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 	<title>Credits | SXW.js</title>
+	<meta name="description"
+		content="SXW.js is an open-source js library that is used to display warnings to users aginst Self XSS attacks.">
+
+	<meta property="og:title" content="SXWjs | JS library for Self XSS Warning">
+	<meta property="og:image"
+		content="https://raw.githubusercontent.com/sxwjs/sxwjs-images/master/github%20social%20preview/SXW%20js.jpg">
+
+
 	<link rel='stylesheet' href='../css/style.min.css' />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -19,7 +29,7 @@
 					<ul>
 						<li><a href="../docs/installtion.html">Documentation</a></li>
 						<li><a href="#">Credits</a></li>
-						<li><a href="https://github.com/sxwjs/sxwjs">GitHub</a></li>
+						<li><a href="https://github.com/sxwjs/sxwjs" target="blank">GitHub</a></li>
 					</ul>
 				</nav>
 				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg"
@@ -85,8 +95,10 @@
 								status icons.</li>
 							<li><a href="https://dev.azure.com/sxw-js/sxw-js" target="blank">Azure Devops</a> - Free
 								CI/CD for open source projects.</li>
-							<li><a href="https://evie.undraw.co/" target="blank">Evie</a> - Template for this website.</li>
-							<li><a href="https://undraw.co/" target="blank">Undraw.co</a> - Free isometric images used in this website.</li>
+							<li><a href="https://evie.undraw.co/" target="blank">Evie</a> - Template for this website.
+							</li>
+							<li><a href="https://undraw.co/" target="blank">Undraw.co</a> - Free isometric images used
+								in this website.</li>
 							<li><a href="https://imgbot.net" target="blank">ImgBot</a> - Automatic compression of new
 								images</li>
 							<li><a href="https://probot.github.io/apps/pull/" target="blank">Pull</a> - Automatic update
@@ -104,6 +116,10 @@
 	</div>
 
 	<script src='../js/app.min.js'></script>
+	<script src="../lib/sxw.js"></script>
+	<script>
+		window.sxwjs.printWarning();
+	</script>
 </body>
 
 </html>
