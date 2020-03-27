@@ -12,7 +12,7 @@
 	<meta property="og:title" content="SXWjs | JS library for Self XSS Warning">
 	<meta property="og:image"
 		content="https://raw.githubusercontent.com/sxwjs/sxwjs-images/master/github%20social%20preview/SXW%20js.jpg">
-		
+
 	<link rel='stylesheet' href='../css/style.min.css' />
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 </head>
@@ -83,63 +83,107 @@
 					<div class="text-container">
 						<h3 class="page__main__title">Configuration</h3>
 						<p>SXW.js has a config object with the following variables,</p>
-						<table>
-							<thead>
-								<tr>
-									<th>Variable name</th>
-									<th>Default value</th>
-									<th>Description</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>stopColor</td>
-									<td>red</td>
-									<td>The colour of the stop sign</td>
-								</tr>
-								<tr>
-									<td>stopText</td>
-									<td>`*` based stop sign text</td>
-									<td>The text used to print STOP sign</td>
-								</tr>
-								<tr>
-									<td>stopFontWeight</td>
-									<td>bold</td>
-									<td>Font weight for stop sign</td>
-								</tr>
-								<tr>
-									<td>cautionText</td>
-									<td>Caution: DO NOT PROCEED.</td>
-									<td>Text for caution notice</td>
-								</tr>
-								<tr>
-									<td>cautionFontWeight</td>
-									<td>bold</td>
-									<td>Font weight for caution sign</td>
-								</tr>
-								<tr>
-									<td>cautionFontSize</td>
-									<td>15px</td>
-									<td>Font size for caution sign</td>
-								</tr>
-								<tr>
-									<td>warningText</td>
-									<td>This section is intended for developers only. Don't copy paste anything ...</td>
-									<td>The detailed error message</td>
-								</tr>
-							</tbody>
-						</table>
-						<p>These variables can be customized to suit your website needs.</p>
+						<ul>
+							<li>
+								<b>stopColor</b>: This is the colour of the stop sign. The default value is
+								<code>red</code>.
+							</li>
+							<li>
+								<b>stopFontWeight</b>: The font weight of the stop sign. The default value is
+								<code>bold</code>.
+							</li>
+							<li>
+								<b>cautionFontWeight</b>: The font weight of the caution notice. The default value is
+								<code>bold</code>.
+							</li>
+							<li>
+								<b>cautionFontSize</b>: The font size of the caution notice. The default value is
+								<code>15px</code>.
+							</li>
+						</ul>
+						<p>These variables can be customized to suit your website needs using the <code>setConfig</code>
+							function.</p>
+						<div>
+							Example js object for configuration
+						</div>
+						<code>
+<pre>var config = {
+  stopColor: "red",
+  stopFontWeight: "bold",
+  cautionFontWeight: "bold",
+  cautionFontSize: "15px",
+};</pre>
+						</code>
+					</div>
+
+					<div class="text-container">
+						<h3 class="page__main__title">Content</h3>
+						<p>SXW.js has a config object with the following variables for each language,</p>
+						<ul>
+							<li>
+								<b>stopText</b>: `*` based stop sign.
+							</li>
+							<li>
+								<b>cautionText</b>: A caution notice with a short one line content.
+							</li>
+							<li>
+								<b>warningText</b>: A detailed message to the customers with instructions to contact
+								your security team and other details.
+							</li>
+						</ul>
+						<p>
+							These variables can be modified using <code>setContent</code> function.
+						</p>
+						<div>
+							Example js object for content
+						</div>
+						<code><pre>var content = {
+  en: {
+    stopText: "*********  *********  *********  *********\n***           ***     ***   ***  ***   ***\n***           ***     ***   ***  ***   ***\n*********     ***     ***   ***  *********\n      ***     ***     ***   ***  ***\n      ***     ***     ***   ***  ***\n*********     ***     *********  ***",
+    cautionText: "Caution: DO NOT PROCEED.",
+    warningText: "This section is intended for developers only. Don't copy paste anything in this area.\nIf someone told you to copy and paste something here, it is a scam and will give them access to your account. In that case, kindly report this to our support team."
+  }
+};</pre>
+</code>
 					</div>
 
 					<div class="text-container">
 						<h3 class="page__main__title">Functions</h3>
 						<p>There are four functions in the library that will be available into the sxwjs object.</p>
 						<ol>
-							<li>printStop - Prints just the huge stop sign</li>
-							<li>printCautionNotice - Prints the caution sign</li>
-							<li>printWarningText - Prints the detailed error message</li>
-							<li>printWarning - prints all the three sections</li>
+							<li>
+								printStop - Prints just the huge stop sign
+								<br>Example: <code>sxwjs.printstop('en');</code>
+							</li>
+							<li>
+								printCautionNotice - Prints the caution sign
+								<br>Example: <code>sxwjs.printCautionNotice('en');</code>
+							</li>
+							<li>
+								printWarningText - Prints the detailed error message
+								<br>Example: <code>sxwjs.printWarningText('en');</code>
+							</li>
+							<li>
+								printWarning - prints all the three sections
+								<br>Example: <code>sxwjs.printWarning('en');</code>
+							</li>
+							<li>
+								setConfig - Assigns the provided configuration.
+								<br>Example: <code>sxwjs.setConfig(config);</code>
+							</li>
+							<li>
+								getConfig - Retrives the configuration.
+								<br>Example: <code>var config = sxwjs.getConfig();</code>
+							</li>
+							<li>
+								setContent - Can be used to modifiy the content such as warningText, cautionNotice,
+								etc...
+								<br>Example: <code>sxwjs.setContent(content);</code>
+							</li>
+							<li>
+								getContent - Retrives the content that will be displayed on the console.
+								<br>Example: <code>var content = sxwjs.getContent();</code>
+							</li>
 						</ol>
 					</div>
 					<p>Note: None of these functions are called by default. You can choose to call them as you wish.</p>
