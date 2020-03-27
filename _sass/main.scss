@@ -362,7 +362,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  -moz-font-feature-settings: "liga" on; }
+  font-feature-settings: "liga" on; }
 
 p {
   margin-bottom: 1.3em; }
@@ -675,8 +675,6 @@ select {
   left: -9999px;
   visibility: hidden; }
 
-[type="checkbox"] {
-  /* checkbox aspect */ }
   [type="checkbox"] + label {
     position: relative;
     padding-left: 2em;
@@ -751,7 +749,7 @@ select {
 
 .navbar__logo {
   font-size: 1.325rem;
-  transition: 0;
+  transition: 0s;
   color: #fff;
   text-decoration: none; }
 
@@ -986,14 +984,10 @@ select {
   max-height: 100px;
   max-width: 222px;
   margin-top: 8pt;
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none; }
-  @media (min-width: 600px) {
-    .step__image {
-      max-width: none; } }
+}
+@media (min-width: 600px) {
+  .step__image {
+    max-width: none; } }
 
 .step__text {
   max-width: 36ch;
@@ -1154,56 +1148,6 @@ select {
       .footer--dark .footer__link:hover {
         color: #fff;
         border-color: #fff; } }
-
-.auth {
-  padding-top: 102.66667px; }
-
-.auth__inner {
-  min-height: calc( 100vh - 188px);
-  -js-display: flex;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center; }
-  @media (min-width: 992px) {
-    .auth__inner {
-      flex-direction: row; } }
-
-@media (min-width: 992px) {
-  .auth__media {
-    width: 50%;
-    flex-shrink: 0; } }
-
-.auth__media img, .auth__media svg {
-  max-height: 150px;
-  max-width: 90%;
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-  @media (min-width: 600px) {
-    .auth__media img, .auth__media svg {
-      max-height: 300px; } }
-  @media (min-width: 992px) {
-    .auth__media img, .auth__media svg {
-      max-height: 400px; } }
-
-.auth__auth {
-  text-align: center; }
-  @media (min-width: 992px) {
-    .auth__auth {
-      width: 50%;
-      flex-shrink: 0; } }
-
-.auth__title {
-  font-size: 1.728em; }
 
 .page__header {
   position: relative;
