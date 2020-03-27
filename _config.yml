@@ -1,0 +1,4 @@
+url     : "https://sxw.js.org/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl : "" # the subpath of your site, e.g. /blog
+title   : "SXW.js" # the name of your site, e.g. ACME Corp.
+exclude : [".git", ".gitignore", ".vscode", "Gemfile", "Gemfile.lock", "LICENSE"]

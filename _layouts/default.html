@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>SXW.js | Prevent Self XSS</title>
+  <meta name="description"
+    content="SXW.js is an open-source js library that is used to display warnings to users aginst Self XSS attacks.">
+
+  <meta property="og:title" content="SXWjs | JS library for Self XSS Warning">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/sxwjs/sxwjs-images/master/github%20social%20preview/SXW%20js.jpg">
+
+  <link rel='stylesheet' href='/assets/css/main.css' />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  {% include navbar.html %}
+  {{ content }}
+  {% include footer.html %}
+
+  <script src='/assets/js/app.min.js'></script>
+  <script src="/assets/lib/sxw.js"></script>
+  <script>
+    window.sxwjs.printWarning();
+  </script>
+
+</body>
+</html>
