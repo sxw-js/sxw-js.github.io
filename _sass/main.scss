@@ -55,11 +55,6 @@ pre {
 
 /* Text-level semantics
    ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent; }
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -115,14 +110,6 @@ sub {
 sup {
   top: -0.5em; }
 
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none; }
-
 /* Forms
    ========================================================================== */
 /**
@@ -144,15 +131,6 @@ textarea {
   /* 2 */ }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible; }
-
-/**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
@@ -160,25 +138,6 @@ button,
 select {
   /* 1 */
   text-transform: none; }
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
 
 /**
  * Correct the padding in Firefox.
@@ -213,23 +172,6 @@ progress {
   vertical-align: baseline; }
 
 /**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto; }
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
@@ -238,11 +180,6 @@ textarea {
 
 /* Interactive
    ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block; }
 
 /*
  * Add the correct display in all browsers.
@@ -252,17 +189,6 @@ summary {
 
 /* Misc
    ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none; }
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none; }
 
 /* Components */
 html {
@@ -515,9 +441,6 @@ select {
   background-repeat: no-repeat;
   background-position: 95% center;
   background-size: 0.8em; }
-  select::-ms-expand {
-    display: none;
-    /* hide the default arrow in ie10 and ie11 */ }
 
 /* Remove default Radio Buttons */
 [type="radio"]:not(:checked),
