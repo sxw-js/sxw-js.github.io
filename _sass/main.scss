@@ -490,7 +490,6 @@ button, .button {
 form {
   margin-bottom: 1.5em; }
   form .double {
-    -js-display: flex;
     display: flex;
     justify-content: space-between; }
     form .double .half {
@@ -739,7 +738,6 @@ select {
     z-index: 3; }
 
 .navbar__inner {
-  -js-display: flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -890,7 +888,6 @@ select {
   z-index: 2; }
 
 .hero__content {
-  -js-display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -925,7 +922,6 @@ select {
       border-color: #e3e3e3; } }
 
 .hero__sub {
-  -js-display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -957,7 +953,6 @@ select {
 
 @media (min-width: 992px) {
   .steps__inner {
-    -js-display: flex;
     display: flex;
     justify-content: space-around; } }
 
@@ -999,7 +994,6 @@ select {
   padding: 72pt 0; }
 
 .expanded__inner {
-  -js-display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1077,7 +1071,6 @@ select {
   padding: 36pt 0; }
 
 .footer__inner {
-  -js-display: flex;
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
@@ -1103,7 +1096,6 @@ select {
       font-size: 1.325rem; } }
 
 .footer__data {
-  -js-display: flex;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
@@ -1161,7 +1153,6 @@ select {
   z-index: 3; }
 
 .page__header__content {
-  -js-display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1187,7 +1178,6 @@ select {
 
 @media (min-width: 992px) {
   .page__inner {
-    -js-display: flex;
     display: flex; } }
 
 .page__menu {
@@ -1220,7 +1210,6 @@ select {
   z-index: 3; }
 
 .app__header__content {
-  -js-display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1246,7 +1235,6 @@ select {
 
 @media (min-width: 992px) {
   .app__inner {
-    -js-display: flex;
     display: flex; } }
 
 .app__menu {
@@ -1271,7 +1259,6 @@ select {
 .vMenu {
   padding: 0;
   list-style-type: none;
-  -js-display: flex;
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
