@@ -33,7 +33,7 @@ permalink: /docs/installation.html
             <div class="page__main">
                 <div class="text-container">
                     <h3 class="page__main__title">Install using npm</h3>
-                    <a href="https://www.npmjs.com/package/@sxwjs/sxwjs" target="blank"><img alt="npm link"
+                    <a href="https://www.npmjs.com/package/@sxwjs/sxwjs" target="blank" rel="noopener"><img alt="npm link"
                             src="https://img.shields.io/npm/v/@sxwjs/sxwjs.svg?style=flat-square&logo=npm"></a><br />
                     <p>
                         You can install from npm using the following command
@@ -42,7 +42,7 @@ permalink: /docs/installation.html
                 </div>
                 <div class="text-container">
                     <h3 class="page__main__title">Install using nuget</h3>
-                    <a href="https://www.nuget.org/packages/sxw.js/" target="blank"><img alt="nuget link"
+                    <a href="https://www.nuget.org/packages/sxw.js/" target="blank" rel="noopener"><img alt="nuget link"
                             src="https://img.shields.io/nuget/v/sxw.js.svg?style=flat-square&logo=nuget"></a><br />
                     <p>
                         SXW.js is also available as a nuget package. To install from nuget
@@ -54,7 +54,7 @@ permalink: /docs/installation.html
                 </div>
                 <div class="text-container">
                     <h3 class="page__main__title">Using js file directly</h3>
-                    <a href="https://github.com/sxwjs/sxwjs/releases" target="blank"><img alt="GitHub release"
+                    <a href="https://github.com/sxwjs/sxwjs/releases" target="blank" rel="noopener"><img alt="GitHub release"
                             src="https://img.shields.io/github/release/sxwjs/sxwjs.svg?label=GitHub%20release&logo=github&style=flat-square"></a><br />
                     <p>
                         You can download the javascript file directly from GitHub and use it in your website.

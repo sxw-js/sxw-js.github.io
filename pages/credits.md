@@ -39,32 +39,29 @@ permalink: /pages/credits.html
                     </table>
                     <br>
                     This project follows the <a href="https://github.com/all-contributors/all-contributors"
-                        class="link" target="blank">all-contributors</a> specification. Contributions of any kind
+                         rel="noopener" class="link" target="blank">all-contributors</a> specification. Contributions of any kind
                     welcome!
                 </div>
                 <div class="text-container">
                     <h3 class="page__main__title">Services & Tools</h3>
                     <ul>
-                        <li><a href="https://github.com" target="blank">Github</a> - Provides free hosting for repos
+                        <li><a href="https://github.com" target="blank" rel="noopener">Github</a> - Provides free hosting for repos
                             and website.</li>
-                        <li><a href="https://js.org" target="blank">js.org</a> - Provides subdomain for our website.
+                        <li><a href="https://js.org" target="blank" rel="noopener">js.org</a> - Provides subdomain for our website.
                         </li>
-                        <li><a href="https://shields.io" target="blank">Shields.io</a> - Provides those beatutiful
+                        <li><a href="https://shields.io" target="blank" rel="noopener">Shields.io</a> - Provides those beatutiful
                             status icons.</li>
-                        <li><a href="https://dev.azure.com/sxw-js/sxw-js" target="blank">Azure Devops</a> - Free
+                        <li><a href="https://dev.azure.com/sxw-js/sxw-js" target="blank" rel="noopener">Azure Devops</a> - Free
                             CI/CD for open source projects.</li>
-                        <li><a href="https://evie.undraw.co/" target="blank">Evie</a> - Template for this website.
+                        <li><a href="https://evie.undraw.co/" target="blank" rel="noopener">Evie</a> - Template for this website.
                         </li>
-                        <li><a href="https://undraw.co/" target="blank">Undraw.co</a> - Free isometric images used
-                            in this website.</li>
-                        <li><a href="https://imgbot.net" target="blank">ImgBot</a> - Automatic compression of new
+                        <li><a href="https://undraw.co/" target="blank" rel="noopener">Undraw.co</a> - Free isometric images used in this website.</li>
+                        <li><a href="https://imgbot.net" target="blank" rel="noopener">ImgBot</a> - Automatic compression of new
                             images</li>
-                        <li><a href="https://probot.github.io/apps/pull/" target="blank">Pull</a> - Automatic update
-                            of forked repos</li>
-                        <li><a href="https://allcontributors.org" target="blank">allcontributors</a> - Helps
+                        <li><a href="https://probot.github.io/apps/pull/" target="blank" rel="noopener">Pull</a> - Automatic update of forked repos</li>
+                        <li><a href="https://allcontributors.org" target="blank" rel="noopener">allcontributors</a> - Helps
                             maintaing list of contributors of the project</li>
-                        <li><a href="https://spark.adobe.com" target="blank">Adobe Spark</a> - Used to create logo,
-                            banners, etc...
+                        <li><a href="https://spark.adobe.com" target="blank" rel="noopener">Adobe Spark</a> - Used to create logo, banners, etc...
                         </li>
                     </ul>
                 </div>
