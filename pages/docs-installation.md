@@ -55,9 +55,12 @@ permalink: /docs/installation.html
                 <div class="text-container">
                     <h3 class="page__main__title">Using js file directly</h3>
                     <a href="https://github.com/sxwjs/sxwjs/releases" target="blank" rel="noopener"><img alt="GitHub release"
-                            src="https://img.shields.io/github/release/sxwjs/sxwjs.svg?label=GitHub%20release&logo=github&style=flat-square"></a><br />
+                            src="https://img.shields.io/github/release/sxwjs/sxwjs.svg?label=GitHub%20release&logo=github&style=flat-square"></a>
+                    <a href="https://www.jsdelivr.com/package/npm/@sxwjs/sxwjs" target="blank" rel="noopener"><img alt="jsdelivr CDN usage" src="https://img.shields.io/jsdelivr/npm/hy/@sxwjs/sxwjs?label=CDN%20-%20jsdelivr&logo=jsdelivr&logoColor=white&style=flat-square"></a><br />
                     <p>
                         You can download the javascript file directly from GitHub and use it in your website.
+                        <br>
+                        You can also use CDN for the js file. A huge thanks to jsdelivr for providing free CDN for all open-source npm packages.
                     </p>
                     <ul>
                     </ul>
